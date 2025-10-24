@@ -1,3 +1,4 @@
+// max attempt
 private const val MAX_ATTEMPTS = 10
 
 fun main() {
@@ -6,6 +7,7 @@ fun main() {
 
     val targetWord = pickRandomWord(wordList)
     println("Welcom to the Wordle game.")
+    // loop for all attempt
     for (i in 1..MAX_ATTEMPTS) {
         val guess = obtainGuess(i)
         val matches = evaluateGuess(guess, targetWord)
